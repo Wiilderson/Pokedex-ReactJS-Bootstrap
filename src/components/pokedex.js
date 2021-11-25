@@ -1,14 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import API from './conectAPI';
 import './styles/styles.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
+const Pokedex = () => {
 
-// import { Container } from './styles';
-
-function Pokedex() {
 
     const [pokemon, setPokemon] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -30,31 +27,33 @@ function Pokedex() {
 
     useEffect(() => {
         getPokeList();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return (
 
+        <div className="" >
+            <div className="row">
+                {
+                    pokemon.map(p => (
+                        <div key={p.data.id} className="card-2" style={{ backgroundColor: '#F4A460', width: '12rem' }}>
+                            <img src={p.data.sprites.other.dream_world.front_default} className="img-fluid" alt="imagem" />
 
-        <div className="container" >
-            <div class="row">
-                {pokemon.map(p => (
-                    <div className="card-2" key={p.name} style={{ backgroundColor: '#F4A460', width: '12rem' }}>
-                        <img src={p.data.sprites.other.dream_world.front_default} className="img-fluid" alt="imagem" />
+                            <Link to={`/pokeStatus/${p.data.id}`} className="text-link">
+                                <div className="card-body">
 
-                        <Link to={'/pokeStatus'} className="text-link">
-                            <div class="card-body">
+                                    <p className="font-color"><strong>{p.data.name}</strong></p>
 
-                                <p className="font-color"><strong>{p.data.name}</strong></p>
+                                    <small className="colortext">Tipo: {p.data.types[0].type.name}</small>
 
-                                <small className="colortext">Tipo: {p.data.types[0].type.name}</small>
+                                </div>
+                            </Link>
 
-                            </div>
-                        </Link>
-
-                    </div>
-                )
-                )}
-            </div>
+                        </div>
+                    )
+                    )
+                }
+            </div >
         </div >
 
     )

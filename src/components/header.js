@@ -4,7 +4,7 @@ import React from 'react';
 
 function HeaderPoke() {
     return (
-        <div class="container">
+        <div className="">
 
             {/* <!-- Logo --> */}
             <div className="logo">

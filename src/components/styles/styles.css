@@ -1,20 +1,6 @@
-.container2 {
-  max-width: 1200px;
-  display: flex; /* or inline-flex */
-  flex-wrap: wrap;
-  column-gap: 100px;
-  justify-content: center;
-}
-
 .logo img {
   height: auto;
   margin: 30px 30px;
-}
-
-.card-container {
-  padding: 100px 0px;
-  -webkit-perspective: 1000;
-  perspective: 1000;
 }
 
 .card-2 {
@@ -68,10 +54,6 @@
   font-weight: inherit;
 }
 
-.background {
-  background-color: #fff;
-}
-
 .cardimg {
   max-height: 100%;
   max-width: 100%;
@@ -80,4 +62,71 @@
 .text-link {
   color: inherit;
   text-decoration: inherit;
+}
+
+.background {
+  background-color: #cab9ad;
+}
+
+.status img {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.font-status {
+  color: #8ba2d4;
+  position: relative;
+  font-size: 25px;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+}
+
+.infor-status {
+  margin-top: 10px;
+  display: block;
+  border-radius: 10px;
+  min-height: 250px;
+  width: 30%;
+  /* background-color: darkgrey; */
+  background-color: #30a7d7;
+}
+
+.atributos {
+  font-family: "Flexo-Medium", arial, sans-serif;
+  clear: both;
+  /* color: #fff; */
+  color: #212121;
+  float: left;
+  font-size: 100%;
+  margin: 1.25em 0 0 0;
+  text-transform: none;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.valor-atri {
+  font-family: "Flexo-Medium", arial, sans-serif;
+  clear: both;
+  /* color: #212121; */
+  color: #fff;
+  float: left;
+  font-size: 120%;
+  margin: 0.75em 1.5em 0 1em;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.coluna-7 {
+  float: left;
+  margin-right: -100%;
+  width: 49.22%;
+}
+
+.push-7 {
+  margin-left: 49.22%;
+}
+
+.teste ul li {
+  display: flex;
+  justify-content: space-between;
 }
