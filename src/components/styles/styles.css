@@ -74,31 +74,35 @@
 }
 
 .font-status {
-  color: #8ba2d4;
+  color: #212121;
   position: relative;
   font-size: 25px;
   text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
   font-weight: bold;
 }
 
+.h4 {
+  font-family: "Flexo-Medium", arial, sans-serif;
+  color: #212121;
+  margin-top: 1.25em;
+  text-transform: none;
+  font-size: 10%;
+}
+
 .infor-status {
   margin-top: 10px;
-  display: block;
   border-radius: 10px;
-  min-height: 250px;
-  width: 30%;
-  /* background-color: darkgrey; */
+  height: 270px;
   background-color: #30a7d7;
 }
 
 .atributos {
   font-family: "Flexo-Medium", arial, sans-serif;
   clear: both;
-  /* color: #fff; */
   color: #212121;
   float: left;
   font-size: 100%;
-  margin: 1.25em 0 0 0;
+  margin: 1.25rem 0 0 0;
   text-transform: none;
   white-space: normal;
   word-break: break-word;
@@ -107,7 +111,6 @@
 .valor-atri {
   font-family: "Flexo-Medium", arial, sans-serif;
   clear: both;
-  /* color: #212121; */
   color: #fff;
   float: left;
   font-size: 120%;
@@ -116,17 +119,88 @@
   word-break: break-word;
 }
 
-.coluna-7 {
-  float: left;
-  margin-right: -100%;
-  width: 49.22%;
-}
-
-.push-7 {
-  margin-left: 49.22%;
-}
-
 .teste ul li {
   display: flex;
   justify-content: space-between;
+  list-style: none;
+}
+.teste2 ul li {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.naUL {
+  font-family: "Flexo-Medium", arial, sans-serif;
+  clear: both;
+  color: #fff;
+  font-size: 120%;
+  border-radius: 5px;
+  text-align: center;
+  margin: 1.25rem 0 0 0;
+  width: 30%;
+}
+
+.infor-status2 {
+  margin-top: 10px;
+  border-radius: 10px;
+  height: 270px;
+  width: 30%;
+  background-color: #30a7d7;
+}
+.pokemoninfo {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pokemoninfo div {
+  margin: 10px;
+}
+.pokemoninfo > .tabelaStats {
+  margin-left: -10px;
+}
+
+.tabelaStats {
+  background-color: #f8f8ff;
+  border-radius: 0 10px 10px 0;
+  height: 190px;
+  width: 30%;
+}
+
+.tabelaStats > h5 {
+  text-align: left;
+}
+
+.tabelastatus2 {
+  display: flex;
+  text-align: left;
+}
+
+.tabelaStats p {
+  text-align: left;
+  /* align-items: center; */
+  margin-top: 3px;
+  margin-left: 20px;
+}
+.tabelaStats div {
+  height: 0.9rem;
+}
+
+.tabelaStats2 {
+  background-color: #f8f8ff;
+  border-radius: 10px 0 0 10px;
+  height: 190px;
+  width: 15%;
+}
+
+.tabelaStats2 p {
+  text-align: left;
+  /* align-items: center; */
+  margin-top: 3px;
+  margin-left: 20px;
+  height: 0.6rem;
+}
+
+.tabelaStats2 div {
+  margin: 33px auto;
 }
